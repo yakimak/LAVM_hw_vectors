@@ -1,8 +1,8 @@
 import math
 
 def rotate_point(x, y, angle_rad):
-    new_x = x * math.cos(angle_rad) - y * math.sin(angle_rad)
-    new_y = x * math.sin(angle_rad) + y * math.cos(angle_rad)
+    new_x = round( (x * math.cos(angle_rad) - y * math.sin(angle_rad)), 1)
+    new_y = round( (x * math.sin(angle_rad) + y * math.cos(angle_rad)), 1)
     return (new_x, new_y)
 
 def rotate_ship(p1, p2, p3, angle):
